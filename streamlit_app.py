@@ -51,7 +51,7 @@ if streamlit.button('Get fruit list'):
   streamlit.dataframe(my_data_rows)
 */
 streamlit.stop()
-"""
+
 # Add second text entry box
 # fruit_choice2 = streamlit.text_input('What fruit would you like information about?','Apple')
 # streamlit.write('Thank you for entering ', fruit_choice2)
@@ -67,3 +67,4 @@ if streamlit.button('Add a fruit to the list'):
     back_from_function = insert_row_snowflake(add_my_fruit)
     my_cnx.close()
     streamlit.text(back_from_function)
+"""
