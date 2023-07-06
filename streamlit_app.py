@@ -37,7 +37,7 @@ try:
     
 except URLError as e:
   streamlit.error()
-
+"""
 streamlit.header("View our fruit list - add your favorites")
 def get_fruit_load_list():
   with my_cnx.cursor() as my_cur:
@@ -49,9 +49,9 @@ if streamlit.button('Get fruit list'):
   my_data_rows = get_fruit_load_list()
   my_cnx.close()
   streamlit.dataframe(my_data_rows)
-
-# streamlit.stop()
-
+*/
+streamlit.stop()
+"""
 # Add second text entry box
 # fruit_choice2 = streamlit.text_input('What fruit would you like information about?','Apple')
 # streamlit.write('Thank you for entering ', fruit_choice2)
